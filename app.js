@@ -90,7 +90,7 @@ function msgHandle(message){
 }
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname + '/public/discord.html'));
+	res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 io.on('connection', function(socket){
 	const datee=new Date();
